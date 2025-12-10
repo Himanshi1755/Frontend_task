@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const API = axios.create({
-  baseURL: "https://backend-task-wwn5.onrender.com", 
+  baseURL: "https://backend-task-wwn5.onrender.com/app", 
 });
