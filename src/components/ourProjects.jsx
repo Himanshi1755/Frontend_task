@@ -51,7 +51,7 @@ function OurProjects() {
                             }}
                         >
                             <img
-                                src={`${backendURL}/${project.pImage.replace(/\\/g, "/")}`}
+                                src={`${backendURL}/${project.pImage}`}
                                 alt={project.pName}
                                 className="card-img-top"
                                 style={{

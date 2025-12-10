@@ -52,7 +52,7 @@ function HappyClients() {
                         }}
                     >
                         <img
-                            src={`${backendURL}/${client.image.replace(/\\/g, "/")}`}
+                            src={`${backendURL}/${client.image}`}
                             alt={client.name}
                             style={{
                                 width: "70px",
