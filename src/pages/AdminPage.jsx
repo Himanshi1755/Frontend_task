@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AdminSidebar from '../components/AdminPanel/AdminSidebar.jsx';
 import AddProject from '../components/AdminPanel/AddProject.jsx';
 import AddClient from '../components/AdminPanel/AddClient.jsx';
-import ViewContacts from '../components/AdminPanel/viewContacts.jsx';
+import ViewContacts from '../components/AdminPanel/ViewContacts.jsx';
 import ViewSubscribers from '../components/AdminPanel/ViewSubscribers.jsx';
 
 function AdminPage() {
