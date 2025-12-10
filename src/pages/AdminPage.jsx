@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import AdminSidebar from '../components/AdminPanel/AdminSidebar.jsx';
 import AddProject from '../components/AdminPanel/AddProject.jsx';
 import AddClient from '../components/AdminPanel/AddClient.jsx';
