@@ -48,7 +48,7 @@ function OurProjects() {
                             }}
                         >
                             <img
-                                src={project.pImage}
+                                src={`${API.defaults.baseURL}/${project.pImage}`}
                                 alt={project.pName}
                                 className="card-img-top"
                                 style={{

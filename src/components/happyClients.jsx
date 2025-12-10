@@ -18,7 +18,6 @@ function HappyClients() {
                 backgroundColor: "#f9fbff",
                 borderRadius: "10px",
                 padding: "40px",
-
             }}
         >
             <h2 className="fw-bold mb-4" style={{ color: "#060606ff" }}>
@@ -28,7 +27,7 @@ function HappyClients() {
             <div
                 style={{
                     display: "grid",
-                    gridTemplateColumns: "repeat(5, 1fr)",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
                     gap: "30px",
                     justifyContent: "center",
                     boxSizing: "border-box",
@@ -42,16 +41,15 @@ function HappyClients() {
                             backgroundColor: "white",
                             borderRadius: "10px",
                             padding: "20px",
-                            textAlign: "left",
+                            textAlign: "center",
                             minHeight: "250px",
                             display: "flex",
                             flexDirection: "column",
                             alignItems: "center"
                         }}
                     >
-
                         <img
-                            src={client.image}
+                            src={`${API.defaults.baseURL}/${client.image}`} // prepend backend URL
                             alt={client.name}
                             style={{
                                 width: "70px",
@@ -62,7 +60,6 @@ function HappyClients() {
                                 boxShadow: "0 0 5px rgba(0,0,0,0.1)"
                             }}
                         />
-
 
                         <p
                             style={{
@@ -75,14 +72,12 @@ function HappyClients() {
                             {client.description}
                         </p>
 
-
                         <h6
                             className="fw-bold"
                             style={{ color: "#007BFF", marginBottom: "5px" }}
                         >
                             {client.name}
                         </h6>
-
 
                         <small style={{ color: "#999" }}>{client.designation}</small>
                     </div>
