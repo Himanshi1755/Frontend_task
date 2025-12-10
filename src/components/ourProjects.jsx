@@ -11,6 +11,9 @@ function OurProjects() {
             .catch((err) => console.log(err));
     }, []);
 
+
+    const backendURL = "https://backend-task-1-hgla.onrender.com";
+
     return (
         <section
             id="projects"
@@ -48,7 +51,7 @@ function OurProjects() {
                             }}
                         >
                             <img
-                                src={`${API.defaults.baseURL}/${project.pImage}`}
+                                src={`${backendURL}/${project.pImage.replace(/\\/g, "/")}`}
                                 alt={project.pName}
                                 className="card-img-top"
                                 style={{

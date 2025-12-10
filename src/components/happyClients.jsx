@@ -11,6 +11,9 @@ function HappyClients() {
             .catch((err) => console.log(err));
     }, []);
 
+    
+    const backendURL = "https://backend-task-1-hgla.onrender.com";
+
     return (
         <div
             className="container py-5 text-center"
@@ -49,7 +52,7 @@ function HappyClients() {
                         }}
                     >
                         <img
-                            src={`${API.defaults.baseURL}/${client.image}`} // prepend backend URL
+                            src={`${backendURL}/${client.image.replace(/\\/g, "/")}`}
                             alt={client.name}
                             style={{
                                 width: "70px",
